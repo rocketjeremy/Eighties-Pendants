@@ -1,8 +1,8 @@
-//AnimationdataforTrinket/Gemma+LEDmatrixbackpackjewelry.
-//Editthisfiletochangetheanimation;it'sunlikelyyou'llneed
-//toeditthesourcecode.
+//Animation data for Trinket/Gemma+LED matrix backpack jewelry.
+//Edit this file to change the animation; it's unlikely you'll need
+//to edit the source code.
 
-#define REPS 255//Numberoftimestorepeattheanimationloop(1-255)
+#define REPS 255 //Numberoftimestorepeattheanimationloop(1-255)
 
 const uint8_t PROGMEM anim[]={
 
