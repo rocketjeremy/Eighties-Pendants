@@ -2,9 +2,18 @@
 //Edit this file to change the animation; it's unlikely you'll need
 //to edit the source code.
 
-#define REPS 255 //Numberoftimestorepeattheanimationloop(1-255)
+//Tetris code modifed/added by Jeremy Smoyer
+
+#define REPS 255 //Number of times to repeat the animation loop (1-255)
 
 const uint8_t PROGMEM anim[]={
+
+ // Animation bitmaps.  Each frame of animation MUST contain
+  // 8 lines of graphics data (there is no error checking for
+  // length).  Each line should be prefixed with the letter 'B',
+  // followed by exactly 8 binary digits (0 or 1), no more,
+  // no less (again, no error checking).  '0' represents an
+  // 'off' pixel, '1' an 'on' pixel.  End line with a comma.
 
 B00111000,
 B00000000,
@@ -14,6 +23,11 @@ B00000000,
 B00000000,
 B00000000,
 B00000000,
+
+// The 9th line (required) is the time to display this frame,
+  // in 1/100ths of a second (e.g. 100 = 1 sec, 25 = 1/4 sec,
+  // etc.).  Range is 0 (no delay) to 255 (2.55 seconds).  If
+  // longer delays are needed, make duplicate frames.
 50,
 
 B00010000,
